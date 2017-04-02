@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jgz-Uk-hya">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Review DetailVC-->
+        <scene sceneID="rvj-zs-iUp">
+            <objects>
+                <viewController id="jgz-Uk-hya" customClass="MCReviewDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DGG-BJ-2sN"/>
+                        <viewControllerLayoutGuide type="bottom" id="tcC-fg-pek"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mUA-8o-G0E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLQ-FG-afb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-EZ-rBZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BYX-EZ-rBZ" firstAttribute="leading" secondItem="RLQ-FG-afb" secondAttribute="leading" id="FCM-UJ-3V5"/>
+                                    <constraint firstItem="BYX-EZ-rBZ" firstAttribute="top" secondItem="RLQ-FG-afb" secondAttribute="top" id="Fps-6d-uDa"/>
+                                    <constraint firstAttribute="width" secondItem="RLQ-FG-afb" secondAttribute="height" multiplier="16:9" id="JB4-eV-HEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="BYX-EZ-rBZ" secondAttribute="trailing" id="PUP-K0-ZkZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="BYX-EZ-rBZ" secondAttribute="bottom" id="ZYi-pq-bQh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-e8-oW3">
+                                <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bku-1T-OGU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="456"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTv-Ci-Ylw">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="456"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WnH-A8-vtb">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="456"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cTv-Ci-Ylw" secondAttribute="trailing" id="3q1-xd-s34"/>
+                                            <constraint firstItem="WnH-A8-vtb" firstAttribute="height" secondItem="cTv-Ci-Ylw" secondAttribute="height" id="6lO-e4-Akn"/>
+                                            <constraint firstItem="WnH-A8-vtb" firstAttribute="top" secondItem="bku-1T-OGU" secondAttribute="top" id="Bfw-qt-WfI"/>
+                                            <constraint firstItem="cTv-Ci-Ylw" firstAttribute="centerY" secondItem="bku-1T-OGU" secondAttribute="centerY" id="LjY-xA-MA7"/>
+                                            <constraint firstAttribute="bottom" secondItem="cTv-Ci-Ylw" secondAttribute="bottom" id="SXf-gz-zzm"/>
+                                            <constraint firstItem="WnH-A8-vtb" firstAttribute="leading" secondItem="cTv-Ci-Ylw" secondAttribute="trailing" id="SnH-t0-gdd"/>
+                                            <constraint firstItem="cTv-Ci-Ylw" firstAttribute="centerX" secondItem="bku-1T-OGU" secondAttribute="centerX" id="k3v-Xp-MZr"/>
+                                            <constraint firstItem="cTv-Ci-Ylw" firstAttribute="top" secondItem="bku-1T-OGU" secondAttribute="top" id="liQ-ND-kcS"/>
+                                            <constraint firstItem="cTv-Ci-Ylw" firstAttribute="leading" secondItem="bku-1T-OGU" secondAttribute="leading" id="nbt-8a-CBA"/>
+                                            <constraint firstItem="WnH-A8-vtb" firstAttribute="width" secondItem="cTv-Ci-Ylw" secondAttribute="width" id="v4f-v7-gTl"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bku-1T-OGU" firstAttribute="top" secondItem="Nkz-e8-oW3" secondAttribute="top" id="5AS-We-d9c"/>
+                                    <constraint firstAttribute="bottom" secondItem="bku-1T-OGU" secondAttribute="bottom" id="8AQ-do-3Db"/>
+                                    <constraint firstItem="bku-1T-OGU" firstAttribute="leading" secondItem="Nkz-e8-oW3" secondAttribute="leading" id="rkI-jE-Ckv"/>
+                                    <constraint firstAttribute="trailing" secondItem="bku-1T-OGU" secondAttribute="trailing" id="yvV-gc-hCp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nkz-e8-oW3" firstAttribute="leading" secondItem="mUA-8o-G0E" secondAttribute="leading" id="EAs-Y1-txo"/>
+                            <constraint firstAttribute="trailing" secondItem="RLQ-FG-afb" secondAttribute="trailing" id="HHG-9B-EMc"/>
+                            <constraint firstItem="RLQ-FG-afb" firstAttribute="top" secondItem="mUA-8o-G0E" secondAttribute="top" id="J1o-Wi-Npv"/>
+                            <constraint firstItem="RLQ-FG-afb" firstAttribute="leading" secondItem="mUA-8o-G0E" secondAttribute="leading" id="XWx-aB-Sbg"/>
+                            <constraint firstItem="tcC-fg-pek" firstAttribute="top" secondItem="Nkz-e8-oW3" secondAttribute="bottom" id="dTf-xs-Ebp"/>
+                            <constraint firstItem="Nkz-e8-oW3" firstAttribute="top" secondItem="RLQ-FG-afb" secondAttribute="bottom" id="dpF-1O-ZJF"/>
+                            <constraint firstAttribute="trailing" secondItem="Nkz-e8-oW3" secondAttribute="trailing" id="wlc-zY-otx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I06-0b-SOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="174.96251874062969"/>
+        </scene>
+    </scenes>
+</document>

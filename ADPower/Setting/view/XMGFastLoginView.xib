@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGFastLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eay-e6-3lx" customClass="XMGFastLoginButton">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="miD-U6-6fi"/>
+                    </constraints>
+                    <state key="normal" image="asset_login_Icon_QQ"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-fU-3fp" customClass="XMGFastLoginButton">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="asset_login_Icon_Weibo"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-tm-Ulk" customClass="XMGFastLoginButton">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="asset_login_Icon_Weixin"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第三方登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="549-Ag-Nky">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ok4-bj-c41"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_left_line" translatesAutoresizingMaskIntoConstraints="NO" id="KAN-U8-fTa"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_right_line" translatesAutoresizingMaskIntoConstraints="NO" id="mwD-Ce-q6h"/>
+            </subviews>
+            <constraints>
+                <constraint firstItem="549-Ag-Nky" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0k8-tW-3Mm"/>
+                <constraint firstItem="549-Ag-Nky" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2f9-tq-8wz"/>
+                <constraint firstItem="mwD-Ce-q6h" firstAttribute="leading" secondItem="549-Ag-Nky" secondAttribute="trailing" id="9MQ-zo-h3b"/>
+                <constraint firstAttribute="bottom" secondItem="6Gg-fU-3fp" secondAttribute="bottom" id="IXm-Ql-lL5"/>
+                <constraint firstItem="6Gg-fU-3fp" firstAttribute="top" secondItem="KAN-U8-fTa" secondAttribute="bottom" id="JCj-dy-QGf"/>
+                <constraint firstItem="6Gg-fU-3fp" firstAttribute="width" secondItem="Eay-e6-3lx" secondAttribute="width" id="Jv2-hq-L4O"/>
+                <constraint firstItem="549-Ag-Nky" firstAttribute="leading" secondItem="KAN-U8-fTa" secondAttribute="trailing" id="QlQ-gh-foH"/>
+                <constraint firstItem="6Gg-fU-3fp" firstAttribute="leading" secondItem="Eay-e6-3lx" secondAttribute="trailing" id="anq-GA-ejd"/>
+                <constraint firstItem="6Gg-fU-3fp" firstAttribute="height" secondItem="Eay-e6-3lx" secondAttribute="height" id="aql-9b-VbX"/>
+                <constraint firstAttribute="trailing" secondItem="4qn-tm-Ulk" secondAttribute="trailing" id="cqa-j7-Xrx"/>
+                <constraint firstAttribute="trailing" secondItem="mwD-Ce-q6h" secondAttribute="trailing" id="e6D-Jk-dH8"/>
+                <constraint firstItem="KAN-U8-fTa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gVD-Ig-iR7"/>
+                <constraint firstItem="4qn-tm-Ulk" firstAttribute="top" secondItem="mwD-Ce-q6h" secondAttribute="bottom" id="hap-8O-2ag"/>
+                <constraint firstItem="4qn-tm-Ulk" firstAttribute="width" secondItem="6Gg-fU-3fp" secondAttribute="width" id="iub-WH-qBp"/>
+                <constraint firstItem="4qn-tm-Ulk" firstAttribute="leading" secondItem="6Gg-fU-3fp" secondAttribute="trailing" id="jYe-YQ-34N"/>
+                <constraint firstAttribute="bottom" secondItem="KAN-U8-fTa" secondAttribute="bottom" id="nH3-2Y-LU8"/>
+                <constraint firstAttribute="bottom" secondItem="Eay-e6-3lx" secondAttribute="bottom" id="phR-7T-bXx"/>
+                <constraint firstItem="Eay-e6-3lx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qqq-R2-BPK"/>
+                <constraint firstItem="KAN-U8-fTa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s4f-12-y1U"/>
+                <constraint firstItem="mwD-Ce-q6h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tOH-u8-8Mj"/>
+                <constraint firstItem="4qn-tm-Ulk" firstAttribute="height" secondItem="6Gg-fU-3fp" secondAttribute="height" id="uch-OY-wis"/>
+                <constraint firstAttribute="bottom" secondItem="4qn-tm-Ulk" secondAttribute="bottom" id="ufB-23-O5F"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="nH3-2Y-LU8"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="39.5" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="asset_login_Icon_QQ" width="24" height="28"/>
+        <image name="asset_login_Icon_Weibo" width="29" height="23"/>
+        <image name="asset_login_Icon_Weixin" width="28" height="23"/>
+        <image name="login_register_left_line" width="1" height="1"/>
+        <image name="login_register_right_line" width="1" height="1"/>
+    </resources>
+</document>

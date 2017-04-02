@@ -1,0 +1,48 @@
+//
+//  ADPower.pch
+//  ADPower
+//
+//  Created by chengxc on 2016/10/30.
+//  Copyright © 2016年 chengxue. All rights reserved.
+//
+
+
+
+//什么时候才需要日志，调试阶段
+
+
+#ifdef __OBJC__
+#ifdef DEBUG //调试阶段
+#define MCLog(...) NSLog(__VA_ARGS__)
+#else        //发布阶段
+#define MCLog(...)
+#endif
+
+#define kEaseApnsCertName @"ADPCertificate"
+#define kEaseAppkey @"1134161108115565#adpower"
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+#import "UIView+XCFrame.h"
+
+#define MCbaseURL @"http://115.28.77.169/api/"
+
+
+#define NAVIH 64
+#define TabbarHeight 49
+//定义这个常量，就可以不用总是带mas前缀
+#define MAS_SHORTHAND
+//定义这个常量，可以自动将基本数据类型装换为对象
+#define MAS_SHORTHAND_GLOBALS
+
+#import <Masonry.h>
+#import <YYKit.h>
+#import <AFNetworking.h>
+#import "SkyStatusHelper.h"
+#import "UIColor+MCColor.h"
+#import "SkyHttpClient.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ADPower_pch */
+
